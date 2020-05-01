@@ -24,7 +24,7 @@ export function generateInterface(contentType: ContentType, name: string): strin
         `
     }
     if (element.type === 'asset') {
-      content += `  ${element.codename}: Elements.AssetsElement[]
+      content += `  ${element.codename}: Elements.AssetsElement
         `
     }
     if (element.type === 'date_time') {
