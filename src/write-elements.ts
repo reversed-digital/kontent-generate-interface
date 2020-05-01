@@ -83,8 +83,7 @@ export interface TextElement extends BaseElement {
 }
 
 export interface LinkedItemsElement<I = ContentItem> extends BaseElement {
-  value: I[];
-  itemCodenames: string[];
+  value: string[];
 }
 
 export interface MultipleChoiceElement extends BaseElement {
