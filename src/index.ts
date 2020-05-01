@@ -23,14 +23,14 @@ async function start() {
       }
     }
 
-    const dir = process.env.NODE_ENV === 'development' ? '__temp__' : __dirname
+    const dir = process.env.NODE_ENV === 'development' ? '__temp__/' : ''
     writeElements(dir)
 
     const { types } = await client.types().toPromise()
     for (const type of types) {
       const name = toPascalCase(type.system.codename)
       const content = await generateInterface(type, name)
-      fs.writeFileSync(`${dir}/${name}.ts`, content, 'utf-8')
+      fs.writeFileSync(`${dir}${name}.ts`, content, 'utf-8')
     }
 
     console.log(chalk.green(`Saved ${types.length} interfaces`))

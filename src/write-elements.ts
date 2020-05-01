@@ -1,5 +1,5 @@
-import prettier from "prettier";
-import * as fs from "fs";
+import prettier from 'prettier'
+import * as fs from 'fs'
 
 const elements = `
 export enum ElementType {
@@ -119,11 +119,11 @@ export interface UnknownElement extends BaseElement {
 export interface DefaultCustomElement extends BaseElement {
   value: string | null;
 }
-`;
+`
 
 export const writeElements = (dir: string) =>
   fs.writeFileSync(
-    `${dir}/Elements.ts`,
-    prettier.format(elements, { semi: false, parser: "typescript" }),
-    "utf-8"
-  );
+    `${dir}Elements.ts`,
+    prettier.format(elements, { semi: false, parser: 'typescript' }),
+    'utf-8'
+  )
