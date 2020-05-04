@@ -1,5 +1,5 @@
-export const toPascalCase = (codename: string): string =>
-  codename
+export const toPascalCase = (codename: string): string => {
+  const transformed = codename
     .split('___')
     .map((str) => `${str[0].toUpperCase()}${str.slice(1)}`)
     .join('')
@@ -9,3 +9,6 @@ export const toPascalCase = (codename: string): string =>
     .split('_')
     .map((str) => `${str[0].toUpperCase()}${str.slice(1)}`)
     .join('')
+
+  return `${transformed[0]}${transformed.slice(1)}`
+}

@@ -82,7 +82,7 @@ export interface TextElement extends BaseElement {
   value: string;
 }
 
-export interface LinkedItemsElement<I = ContentItem> extends BaseElement {
+export interface LinkedItemsElement extends BaseElement {
   value: string[];
 }
 
