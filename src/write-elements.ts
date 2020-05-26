@@ -97,7 +97,7 @@ export interface RichTextElement extends BaseElement {
   type: ElementType;
   links: Link[];
   images: RichTextImage[];
-  linkedItemCodenames: string[];
+  modular_content: string[];
 }
 export interface TaxonomyElement extends BaseElement {
   value: TaxonomyTerm[];
