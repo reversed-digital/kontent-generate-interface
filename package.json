@@ -1,6 +1,6 @@
 {
   "name": "kontent-generate-interface",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "main": "./lib/index.js",
   "scripts": {
     "prepublish": "yarn build",
